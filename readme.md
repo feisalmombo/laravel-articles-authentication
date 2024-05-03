@@ -1,6 +1,6 @@
-## Example Laravel API
+## Article Laravel API and Authentication
 
- This is a sample project to show how you could write an API using Laravel 5. You can follow the tutorial online at https://www.toptal.com/laravel/restful-laravel-api-tutorial
+ This is an article project to show how you could write an API using Laravel.
 
  There will be some minor differences, specially regarding downloaded packages, as I used the
  excellent [Laravel Ide Helper](https://github.com/barryvdh/laravel-ide-helper) to setup
@@ -24,4 +24,10 @@ Then install, migrate, seed, all that jazz:
 3. `php artisan db:seed`
 4. `php artisan serve`
 
-The API will be running on `localhost:8000`.
+or You can speciify your port in order to running the API by using 
+`php artisan serve --port 9090`
+
+or running this one command to run migration and seeder
+`php artisan migrate:refresh --seed`
+
+The API will be running on `localhost:8000` or `localhost:9090`
