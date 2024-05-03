@@ -12,10 +12,10 @@ class RegisterTest extends TestCase
     public function testsRegistersSuccessfully()
     {
         $payload = [
-            'name' => 'John',
-            'email' => 'john@toptal.com',
-            'password' => 'toptal123',
-            'password_confirmation' => 'toptal123',
+            'name' => 'Super Admin',
+            'email' => 'superadmin@gmail.com',
+            'password' => 'developer',
+            'password_confirmation' => 'developer',
         ];
 
         $this->json('post', '/api/register', $payload)
@@ -46,9 +46,9 @@ class RegisterTest extends TestCase
     public function testsRequirePasswordConfirmation()
     {
         $payload = [
-            'name' => 'John',
-            'email' => 'john@toptal.com',
-            'password' => 'toptal123',
+            'name' => 'Super Admin',
+            'email' => 'superadmin@gmail.com',
+            'password' => 'developer',
         ];
 
         $this->json('post', '/api/register', $payload)

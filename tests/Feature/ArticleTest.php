@@ -90,7 +90,7 @@ class ArticleTest extends TestCase
     public function testUserCantAccessArticlesWithWrongToken()
     {
         factory(Article::class)->create();
-        $user = factory(User::class)->create([ 'email' => 'user@test.com' ]);
+        $user = factory(User::class)->create([ 'email' => 'superadmin@gmail.com' ]);
         $token = $user->generateToken();
         $headers = ['Authorization' => "Bearer $token"];
         $user->generateToken();

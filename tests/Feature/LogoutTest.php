@@ -13,7 +13,7 @@ class LogoutTest extends TestCase
 {
     public function testUserIsLoggedOutProperly()
     {
-        $user = factory(User::class)->create([ 'email' => 'user@test.com' ]);
+        $user = factory(User::class)->create([ 'email' => 'superadmin@gmail.com' ]);
         $token = $user->generateToken();
         $headers = ['Authorization' => "Bearer $token"];
 
@@ -28,7 +28,7 @@ class LogoutTest extends TestCase
     public function testUserWithNullToken()
     {
         // Simulating login
-        $user = factory(User::class)->create([ 'email' => 'user@test.com' ]);
+        $user = factory(User::class)->create([ 'email' => 'superadmin@gmail.com' ]);
         $token = $user->generateToken();
         $headers = ['Authorization' => "Bearer $token"];
 

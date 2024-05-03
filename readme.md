@@ -1,6 +1,6 @@
-## Article Laravel API and Authentication
+## Articles Laravel API and Authentication
 
- This is an article project to show how you could write an API using Laravel.
+ This is articles project to show how you could write an API using Laravel.
 
  There will be some minor differences, specially regarding downloaded packages, as I used the
  excellent [Laravel Ide Helper](https://github.com/barryvdh/laravel-ide-helper) to setup
